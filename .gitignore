@@ -1,0 +1,6 @@
+work/
+__pycache__/
+*.pyc
+.DS_Store
+# Large regenerable intermediate: 66,148-row scoping survey output.
+results/tables/depth_scoping_raw.csv

@@ -1,0 +1,76 @@
+motif,family,reference,residues,n_residues_mapped,residues_unmapped,control_domain,n_control_columns,source,interface_overlap,measure,scope,observed,control_mean,fold,z,p_perm,ci_low,ci_high,gap_fraction,n_observations,q_bh,significant_q05
+KIR_aromatic,socs,SOCS1,64,1,,KIR,11,Zhai 2026 ('Y' motif),1,aromatic_fraction,SOCS1,0.8849,,,,,0.8593,0.9065,0.0057,704.0,,False
+KIR_aromatic,socs,SOCS1,64,1,,KIR,11,Zhai 2026 ('Y' motif),1,aromatic_fraction,SOCS3,0.9673,,,,,0.9515,0.9781,0.0185,704.0,,False
+KIR_aromatic,socs,SOCS1,64,1,,KIR,11,Zhai 2026 ('Y' motif),1,aromatic_fraction,SOCS2,0.01,,,,,0.0046,0.0217,0.2074,598.0,,False
+BCloop_FF,socs,SOCS1,"112,113",2,,SH2,81,Zhai 2026 ('FF' motif),2,aromatic_fraction,SOCS1,0.995,,,,,0.9898,0.9976,0.0,1408.0,,False
+BCloop_FF,socs,SOCS1,"112,113",2,,SH2,81,Zhai 2026 ('FF' motif),2,aromatic_fraction,SOCS3,0.9389,,,,,0.9252,0.9503,0.0,1408.0,,False
+BCloop_FF,socs,SOCS1,"112,113",2,,SH2,81,Zhai 2026 ('FF' motif),2,aromatic_fraction,SOCS2,0.2107,,,,,0.1885,0.2347,0.0,1196.0,,False
+BCloop_QR_SOCS1only,socs,SOCS1,"108,109",2,,SH2,81,Zhai 2026 ('QR' motif; not homologous in SOCS3),2,aromatic_fraction,SOCS1,0.0,,,,,0.0,0.0027,0.0007,1408.0,,False
+BCloop_QR_SOCS1only,socs,SOCS1,"108,109",2,,SH2,81,Zhai 2026 ('QR' motif; not homologous in SOCS3),2,aromatic_fraction,SOCS3,0.0,,,,,0.0,0.0027,0.0,1408.0,,False
+BCloop_QR_SOCS1only,socs,SOCS1,"108,109",2,,SH2,81,Zhai 2026 ('QR' motif; not homologous in SOCS3),2,aromatic_fraction,SOCS2,0.0033,,,,,0.0013,0.0086,0.0017,1196.0,,False
+KIR_H54_R59,socs,SOCS1,"54,55,56,57,58,59",6,,whole_block (fallback from KIR),229,Yasukawa 1999,6,aromatic_fraction,SOCS1,0.3224,,,,,0.3085,0.3367,0.0031,4224.0,,False
+KIR_H54_R59,socs,SOCS1,"54,55,56,57,58,59",6,,whole_block (fallback from KIR),229,Yasukawa 1999,6,aromatic_fraction,SOCS3,0.2055,,,,,0.1936,0.2179,0.0161,4224.0,,False
+KIR_H54_R59,socs,SOCS1,"54,55,56,57,58,59",6,,whole_block (fallback from KIR),229,Yasukawa 1999,6,aromatic_fraction,SOCS2,0.0164,,,,,0.0128,0.0212,0.8417,3588.0,,False
+ESS_I68_L75,socs,SOCS1,"68,75",2,,ESS,10,Yasukawa 1999,2,aromatic_fraction,SOCS1,0.0,,,,,0.0,0.0027,0.0014,1408.0,,False
+ESS_I68_L75,socs,SOCS1,"68,75",2,,ESS,10,Yasukawa 1999,2,aromatic_fraction,SOCS3,0.0007,,,,,0.0001,0.004,0.0121,1408.0,,False
+ESS_I68_L75,socs,SOCS1,"68,75",2,,ESS,10,Yasukawa 1999,2,aromatic_fraction,SOCS2,0.0042,,,,,0.0018,0.0097,0.1421,1196.0,,False
+KIR_full,socs,SOCS1,"55,56,57,58,59,60,61,62,63,64,65,66",12,,whole_block,223,UniProt / Yasukawa 1999,12,aromatic_fraction,SOCS1,0.2373,,,,,0.2284,0.2465,0.0038,8448.0,,False
+KIR_full,socs,SOCS1,"55,56,57,58,59,60,61,62,63,64,65,66",12,,whole_block,223,UniProt / Yasukawa 1999,12,aromatic_fraction,SOCS3,0.1835,,,,,0.1754,0.1919,0.0168,8448.0,,False
+KIR_full,socs,SOCS1,"55,56,57,58,59,60,61,62,63,64,65,66",12,,whole_block,223,UniProt / Yasukawa 1999,12,aromatic_fraction,SOCS2,0.012,,,,,0.0097,0.0148,0.4693,7176.0,,False
+ESS_full,socs,SOCS1,"67,68,69,70,71,72,73,74,75,76,77,78",12,,whole_block,223,UniProt / Yasukawa 1999,8,aromatic_fraction,SOCS1,0.007,,,,,0.0054,0.009,0.0018,8448.0,,False
+ESS_full,socs,SOCS1,"67,68,69,70,71,72,73,74,75,76,77,78",12,,whole_block,223,UniProt / Yasukawa 1999,8,aromatic_fraction,SOCS3,0.0022,,,,,0.0014,0.0035,0.012,8448.0,,False
+ESS_full,socs,SOCS1,"67,68,69,70,71,72,73,74,75,76,77,78",12,,whole_block,223,UniProt / Yasukawa 1999,8,aromatic_fraction,SOCS2,0.0052,,,,,0.0037,0.0071,0.1189,7176.0,,False
+SH2_pTyr_arginine,socs,SOCS1,104,1,,SH2,82,Bergamin 2006,1,aromatic_fraction,SOCS1,0.0,,,,,0.0,0.0054,0.0,704.0,,False
+SH2_pTyr_arginine,socs,SOCS1,104,1,,SH2,82,Bergamin 2006,1,aromatic_fraction,SOCS3,0.0,,,,,0.0,0.0054,0.0014,704.0,,False
+SH2_pTyr_arginine,socs,SOCS1,104,1,,SH2,82,Bergamin 2006,1,aromatic_fraction,SOCS2,0.0,,,,,0.0,0.0064,0.0033,598.0,,False
+SH2_FLVR,socs,SOCS1,"101,102,103,104",4,,SH2,79,Bergamin 2006,1,aromatic_fraction,SOCS1,0.25,,,,,0.2344,0.2663,0.0,2816.0,,False
+SH2_FLVR,socs,SOCS1,"101,102,103,104",4,,SH2,79,Bergamin 2006,1,aromatic_fraction,SOCS3,0.2496,,,,,0.234,0.266,0.0014,2816.0,,False
+SH2_FLVR,socs,SOCS1,"101,102,103,104",4,,SH2,79,Bergamin 2006,1,aromatic_fraction,SOCS2,0.2492,,,,,0.2322,0.2669,0.0033,2392.0,,False
+JAK_GQM_motif,jak,JAK2,"1071,1072,1073",3,,JH1,278,Zhai 2026,3,aromatic_fraction,JAK1,0.0,,,,,0.0,0.0021,0.0214,1821.0,,False
+JAK_GQM_motif,jak,JAK2,"1071,1072,1073",3,,JH1,278,Zhai 2026,3,aromatic_fraction,JAK2,0.0,,,,,0.0,0.002,0.0315,1875.0,,False
+JAK_GQM_motif,jak,JAK2,"1071,1072,1073",3,,JH1,278,Zhai 2026,3,aromatic_fraction,TYK2,0.0019,,,,,0.0005,0.0068,0.031,1065.0,,False
+JAK_activation_loop,jak,JAK2,"1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014",11,,JH1,270,Kershaw 2013 / Liau 2018,6,aromatic_fraction,JAK1,0.1812,,,,,0.1722,0.1906,0.0033,6677.0,,False
+JAK_activation_loop,jak,JAK2,"1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014",11,,JH1,270,Kershaw 2013 / Liau 2018,6,aromatic_fraction,JAK2,0.1807,,,,,0.1717,0.1899,0.0058,6875.0,,False
+JAK_activation_loop,jak,JAK2,"1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014",11,,JH1,270,Kershaw 2013 / Liau 2018,6,aromatic_fraction,TYK2,0.1813,,,,,0.1695,0.1937,0.0064,3905.0,,False
+KIR_H54_R59,socs,SOCS1,"54,55,56,57,58,59",6,,whole_block (fallback from KIR),229,Yasukawa 1999,6,constraint_jsd,SOCS1,0.669,0.4106,1.629,2.289,0.0217978202179782,,,,,0.20325967403259676,False
+KIR_H54_R59,socs,SOCS1,"54,55,56,57,58,59",6,,whole_block (fallback from KIR),229,Yasukawa 1999,6,constraint_jsd,SOCS2,0.092,0.3409,0.27,-2.256,0.022297770222977704,,,,,0.20325967403259676,False
+ESS_full,socs,SOCS1,"67,68,69,70,71,72,73,74,75,76,77,78",12,,whole_block,223,UniProt / Yasukawa 1999,8,constraint_jsd,SOCS3,0.599,0.3947,1.518,2.228,0.024197580241975804,,,,,0.20325967403259676,False
+KIR_full,socs,SOCS1,"55,56,57,58,59,60,61,62,63,64,65,66",12,,whole_block,223,UniProt / Yasukawa 1999,12,constraint_jsd,SOCS2,0.1812,0.3428,0.528,-2.041,0.038896110388961104,,,,,0.23895610438956102,False
+SH2_FLVR,socs,SOCS1,"101,102,103,104",4,,SH2,79,Bergamin 2006,1,constraint_jsd,SOCS2,0.7328,0.5292,1.385,2.002,0.043795620437956206,,,,,0.23895610438956102,False
+SH2_FLVR,socs,SOCS1,"101,102,103,104",4,,SH2,79,Bergamin 2006,1,constraint_jsd,SOCS1,0.7777,0.601,1.294,1.959,0.0484951504849515,,,,,0.23895610438956102,False
+KIR_full,socs,SOCS1,"55,56,57,58,59,60,61,62,63,64,65,66",12,,whole_block,223,UniProt / Yasukawa 1999,12,constraint_jsd,SOCS3,0.5723,0.3961,1.445,1.889,0.056894310568943104,,,,,0.23895610438956102,False
+KIR_H54_R59,socs,SOCS1,"54,55,56,57,58,59",6,,whole_block (fallback from KIR),229,Yasukawa 1999,6,constraint_jsd,SOCS3,0.6341,0.3991,1.589,1.817,0.0685931406859314,,,,,0.2619010826190108,False
+BCloop_FF,socs,SOCS1,"112,113",2,,SH2,81,Zhai 2026 ('FF' motif),2,constraint_jsd,SOCS1,0.8274,0.6041,1.369,1.694,0.08359164083591641,,,,,0.27458792582280234,False
+SH2_FLVR,socs,SOCS1,"101,102,103,104",4,,SH2,79,Bergamin 2006,1,constraint_jsd,SOCS3,0.7919,0.636,1.245,1.701,0.08499150084991501,,,,,0.27458792582280234,False
+SH2_pTyr_arginine,socs,SOCS1,104,1,,SH2,82,Bergamin 2006,1,constraint_jsd,SOCS2,0.8454,0.5353,1.579,1.498,0.096990300969903,,,,,0.290970902909709,False
+ESS_full,socs,SOCS1,"67,68,69,70,71,72,73,74,75,76,77,78",12,,whole_block,223,UniProt / Yasukawa 1999,8,constraint_jsd,SOCS1,0.5324,0.411,1.296,1.499,0.13708629137086292,,,,,0.3838416158384162,False
+JAK_activation_loop,jak,JAK2,"1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014",11,,JH1,270,Kershaw 2013 / Liau 2018,6,constraint_jsd,JAK2,0.7631,0.7089,1.076,1.426,0.1503849615038496,,,,,0.39476052394760525,False
+KIR_full,socs,SOCS1,"55,56,57,58,59,60,61,62,63,64,65,66",12,,whole_block,223,UniProt / Yasukawa 1999,12,constraint_jsd,SOCS1,0.524,0.4115,1.274,1.374,0.1678832116788321,,,,,0.40293865350307073,False
+SH2_pTyr_arginine,socs,SOCS1,104,1,,SH2,82,Bergamin 2006,1,constraint_jsd,SOCS1,0.8491,0.6066,1.4,1.3,0.17668233176682333,,,,,0.40293865350307073,False
+ESS_I68_L75,socs,SOCS1,"68,75",2,,ESS,10,Yasukawa 1999,2,constraint_jsd,SOCS2,0.2127,0.3588,0.593,-1.253,0.1822817718228177,,,,,0.40293865350307073,False
+ESS_I68_L75,socs,SOCS1,"68,75",2,,ESS,10,Yasukawa 1999,2,constraint_jsd,SOCS3,0.4939,0.6201,0.796,-1.261,0.22997700229977003,,,,,0.43904700439047006,False
+SH2_pTyr_arginine,socs,SOCS1,104,1,,SH2,82,Bergamin 2006,1,constraint_jsd,SOCS3,0.8481,0.641,1.323,1.115,0.26577342265773424,,,,,0.4853253805054278,False
+KIR_aromatic,socs,SOCS1,64,1,,KIR,11,Zhai 2026 ('Y' motif),1,constraint_jsd,SOCS3,0.691,0.5615,1.231,0.831,0.36426357364263573,,,,,0.611962803719628,False
+JAK_GQM_motif,jak,JAK2,"1071,1072,1073",3,,JH1,278,Zhai 2026,3,constraint_jsd,JAK1,0.7577,0.6753,1.122,0.895,0.38866113388661133,,,,,0.6278372162783721,False
+BCloop_FF,socs,SOCS1,"112,113",2,,SH2,81,Zhai 2026 ('FF' motif),2,constraint_jsd,SOCS3,0.7552,0.6407,1.179,0.877,0.41845815418458154,,,,,0.6285871412858715,False
+JAK_activation_loop,jak,JAK2,"1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014",11,,JH1,270,Kershaw 2013 / Liau 2018,6,constraint_jsd,JAK1,0.713,0.6747,1.057,0.807,0.41905809419058093,,,,,0.6285871412858715,False
+KIR_aromatic,socs,SOCS1,64,1,,KIR,11,Zhai 2026 ('Y' motif),1,constraint_jsd,SOCS1,0.6577,0.5119,1.285,0.819,0.4430556944305569,,,,,0.639036096390361,False
+ESS_I68_L75,socs,SOCS1,"68,75",2,,ESS,10,Yasukawa 1999,2,constraint_jsd,SOCS1,0.4364,0.5517,0.791,-0.95,0.45645435456454353,,,,,0.639036096390361,False
+BCloop_QR_SOCS1only,socs,SOCS1,"108,109",2,,SH2,81,Zhai 2026 ('QR' motif; not homologous in SOCS3),2,constraint_jsd,SOCS2,0.4476,0.5413,0.827,-0.64,0.5335466453354665,,,,,0.6484851514848514,False
+KIR_aromatic,socs,SOCS1,64,1,,KIR,11,Zhai 2026 ('Y' motif),1,constraint_jsd,SOCS2,0.2302,0.1767,1.303,0.476,0.54994500549945,,,,,0.6484851514848514,False
+JAK_activation_loop,jak,JAK2,"1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014",11,,JH1,270,Kershaw 2013 / Liau 2018,6,constraint_jsd,TYK2,0.6484,0.6176,1.05,0.598,0.5520447955204479,,,,,0.6484851514848514,False
+BCloop_FF,socs,SOCS1,"112,113",2,,SH2,81,Zhai 2026 ('FF' motif),2,constraint_jsd,SOCS2,0.6255,0.5369,1.165,0.6,0.5558444155584441,,,,,0.6484851514848514,False
+BCloop_QR_SOCS1only,socs,SOCS1,"108,109",2,,SH2,81,Zhai 2026 ('QR' motif; not homologous in SOCS3),2,constraint_jsd,SOCS3,0.7118,0.6418,1.109,0.54,0.6396360363963604,,,,,0.7045603131994493,False
+JAK_GQM_motif,jak,JAK2,"1071,1072,1073",3,,JH1,278,Zhai 2026,3,constraint_jsd,TYK2,0.574,0.6192,0.927,-0.448,0.6542345765423457,,,,,0.7045603131994493,False
+JAK_GQM_motif,jak,JAK2,"1071,1072,1073",3,,JH1,278,Zhai 2026,3,constraint_jsd,JAK2,0.7375,0.7108,1.038,0.363,0.7222277772222778,,,,,0.7583391660833917,False
+BCloop_QR_SOCS1only,socs,SOCS1,"108,109",2,,SH2,81,Zhai 2026 ('QR' motif; not homologous in SOCS3),2,constraint_jsd,SOCS1,0.6092,0.6095,0.999,-0.011,0.9982001799820018,,,,,0.9993000699930006,False
+ESS_full,socs,SOCS1,"67,68,69,70,71,72,73,74,75,76,77,78",12,,whole_block,223,UniProt / Yasukawa 1999,8,constraint_jsd,SOCS2,0.3344,0.3346,1.0,-0.005,0.9993000699930007,,,,,0.9993000699930006,False
+KIR_H54_R59,socs,SOCS1,"54,55,56,57,58,59",6,,whole_block (fallback from KIR),229,Yasukawa 1999,6,specificity_mi,binder_vs_SOCS2,0.7626,0.2315,3.294,6.057,9.999000099990002e-05,,,,,0.0020997900209979003,True
+KIR_full,socs,SOCS1,"55,56,57,58,59,60,61,62,63,64,65,66",12,,whole_block,223,UniProt / Yasukawa 1999,12,specificity_mi,binder_vs_SOCS2,0.5568,0.2283,2.439,5.294,9.999000099990002e-05,,,,,0.0020997900209979003,True
+SH2_FLVR,socs,SOCS1,"101,102,103,104",4,,SH2,79,Bergamin 2006,1,specificity_mi,binder_vs_SOCS2,0.0787,0.3027,0.26,-1.899,0.051594840515948405,,,,,0.23895610438956102,False
+SH2_pTyr_arginine,socs,SOCS1,104,1,,SH2,82,Bergamin 2006,1,specificity_mi,binder_vs_SOCS2,0.0016,0.2954,0.005,-1.22,0.19978002199780023,,,,,0.4195380461953805,False
+BCloop_FF,socs,SOCS1,"112,113",2,,SH2,81,Zhai 2026 ('FF' motif),2,specificity_mi,binder_vs_SOCS2,0.5014,0.2867,1.749,1.283,0.2176782321767823,,,,,0.4353564643535646,False
+ESS_full,socs,SOCS1,"67,68,69,70,71,72,73,74,75,76,77,78",12,,whole_block,223,UniProt / Yasukawa 1999,8,specificity_mi,binder_vs_SOCS2,0.3111,0.2415,1.288,1.031,0.30616938306169383,,,,,0.5357964203579643,False
+BCloop_QR_SOCS1only,socs,SOCS1,"108,109",2,,SH2,81,Zhai 2026 ('QR' motif; not homologous in SOCS3),2,specificity_mi,binder_vs_SOCS2,0.4067,0.289,1.407,0.692,0.5341465853414659,,,,,0.6484851514848514,False
+KIR_aromatic,socs,SOCS1,64,1,,KIR,11,Zhai 2026 ('Y' motif),1,specificity_mi,binder_vs_SOCS2,0.7779,0.5367,1.449,1.032,0.5431456854314568,,,,,0.6484851514848514,False
+ESS_I68_L75,socs,SOCS1,"68,75",2,,ESS,10,Yasukawa 1999,2,specificity_mi,binder_vs_SOCS2,0.3609,0.3011,1.199,0.562,0.5964403559644036,,,,,0.6770404040677014,False

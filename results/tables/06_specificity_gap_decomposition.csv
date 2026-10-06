@@ -1,0 +1,5 @@
+module,n_cols,mean_mi_with_gaps,mean_mi_residues_only,gap_driven_fraction
+KIR,12,0.5568,0.3936,0.293
+ESS,12,0.3111,0.2979,0.042
+SH2,83,0.2919,0.2692,0.078
+SOCS_box,50,0.2959,0.2858,0.034

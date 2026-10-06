@@ -1,0 +1,7 @@
+family,paralogue,n_sequences,neff_80,mean_occupancy
+jak,JAK1,607,12.6,0.8958
+jak,JAK2,625,8.8,0.926
+jak,TYK2,355,22.2,0.8937
+socs,SOCS1,704,43.0,0.7532
+socs,SOCS3,704,11.2,0.6366
+socs,SOCS2,598,53.2,0.6249

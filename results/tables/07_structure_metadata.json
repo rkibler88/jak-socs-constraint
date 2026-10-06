@@ -1,0 +1,134 @@
+[
+  {
+    "pdb_id": "4GL9",
+    "citation": "Kershaw 2013 10.1038/nsmb.2519",
+    "jak_paralogue": "JAK2",
+    "socs_paralogue": "SOCS3",
+    "chain_pair_contacts": [
+      {
+        "structure": "4GL9",
+        "jak_chain": "A",
+        "socs_chain": "E",
+        "n_contacts": 255
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "A",
+        "socs_chain": "F",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "A",
+        "socs_chain": "G",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "A",
+        "socs_chain": "H",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "B",
+        "socs_chain": "E",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "B",
+        "socs_chain": "F",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "B",
+        "socs_chain": "G",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "B",
+        "socs_chain": "H",
+        "n_contacts": 257
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "C",
+        "socs_chain": "E",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "C",
+        "socs_chain": "F",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "C",
+        "socs_chain": "G",
+        "n_contacts": 267
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "C",
+        "socs_chain": "H",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "D",
+        "socs_chain": "E",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "D",
+        "socs_chain": "F",
+        "n_contacts": 256
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "D",
+        "socs_chain": "G",
+        "n_contacts": 0
+      },
+      {
+        "structure": "4GL9",
+        "jak_chain": "D",
+        "socs_chain": "H",
+        "n_contacts": 0
+      }
+    ],
+    "n_contact_pairs_kept": 1035,
+    "jak_interface_residues": 42,
+    "socs_interface_residues": 46,
+    "socs_resolved_range": [
+      22,
+      184
+    ]
+  },
+  {
+    "pdb_id": "6C7Y",
+    "citation": "Liau 2018 10.1038/s41467-018-04013-1",
+    "jak_paralogue": "JAK1",
+    "socs_paralogue": "SOCS1",
+    "chain_pair_contacts": [
+      {
+        "structure": "6C7Y",
+        "jak_chain": "A",
+        "socs_chain": "B",
+        "n_contacts": 296
+      }
+    ],
+    "n_contact_pairs_kept": 296,
+    "jak_interface_residues": 51,
+    "socs_interface_residues": 43,
+    "socs_resolved_range": [
+      48,
+      164
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+design,N,L_jak,L_socs,L,Neff_80,Neff_over_N,Neff_over_L,gate_needs,gate_ratio,passes,note
+JAK1xSOCS1,340,276,156,432,13.5,0.0396,0.031,216.0,0.062,False,"paralogue-homogeneous, full domain"
+JAK1xSOCS3,347,276,156,432,12.8,0.0368,0.03,216.0,0.059,False,"paralogue-homogeneous, full domain"
+JAK2xSOCS1,360,276,156,432,16.0,0.0444,0.037,216.0,0.074,False,"paralogue-homogeneous, full domain"
+JAK2xSOCS3,365,276,156,432,8.1,0.0221,0.019,216.0,0.037,False,"paralogue-homogeneous, full domain"
+TYK2xSOCS1,308,276,156,432,19.8,0.0644,0.046,216.0,0.092,False,"paralogue-homogeneous, full domain"
+TYK2xSOCS3,325,276,156,432,14.5,0.0447,0.034,216.0,0.067,False,"paralogue-homogeneous, full domain"
+POOL-factorial,2045,276,156,432,79.6,0.0389,0.184,216.0,0.369,False,"all 6 combos, full domain"
+POOL-KIR/ESS,2045,276,24,300,35.8,0.0175,0.119,150.0,0.239,False,"all 6 combos, SOCS reduced to KIR+ESS"
+POOL-KIR/ESS-Jhalf,2045,138,24,162,39.2,0.0192,0.242,81.0,0.484,False,L-reduction probe
+POOL+INV-factorial,2126,276,156,432,126.6,0.0596,0.293,216.0,0.586,False,"gnathostome factorial + invertebrates, full domain"
+POOL+INV-KIR/ESS,2126,276,24,300,82.0,0.0386,0.273,150.0,0.547,False,"gnathostome factorial + invertebrates, KIR+ESS"
+INV-only,81,276,156,432,45.7,0.5637,0.106,216.0,0.211,False,"invertebrates alone, full domain"

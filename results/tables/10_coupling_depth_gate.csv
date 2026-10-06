@@ -1,0 +1,2 @@
+dataset,n_records,l_jak,l_socs,l_total,neff_theta_0.7,neff_theta_0.8,neff_theta_0.9,neff_over_l,ovchinnikov_threshold,gate_ratio,passes_gate
+factorial_pool_JH1_x_SOCSmodules,2912,281,156,437,18.5,145.3,523.8,0.3324,218.5,0.6648,False

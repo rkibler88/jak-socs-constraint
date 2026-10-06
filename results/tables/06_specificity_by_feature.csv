@@ -1,0 +1,7 @@
+feature,n_columns,n_significant,mean_mi,frac_significant
+ESS,12,11,0.3111,0.917
+KIR,12,12,0.5568,1.0
+SH2,82,74,0.2886,0.902
+SH2;SOCS_box,1,1,0.5634,1.0
+SOCS_box,49,47,0.2904,0.959
+none,79,36,0.1104,0.456

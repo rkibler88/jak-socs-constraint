@@ -1,0 +1,77 @@
+JAK/SOCS evolutionary constraint analysis - run log
+================================================================
+timestamp          2026-09-29T17:44:45
+platform           macOS-14.6-arm64-arm-64bit
+python             3.12.14
+numpy              2.5.3
+scipy              1.18.1
+pandas             3.0.6
+matplotlib         3.11.2
+biopython          1.88
+statsmodels        0.15.0
+external tools     {
+                    "mafft": "v7.526 (2024/Apr/26)",
+                    "hmmsearch": "Failed to parse command line: No such option \"--version\".",
+                    "mmseqs": "MMseqs2 (Many against Many sequence searching) is an open-so",
+                    "cd-hit": "====== CD-HIT version 4.8.1 (built on Apr 24 2025) ======"
+}
+git hash           not a git repo
+random seed        42 (every permutation, bootstrap and resampling step)
+
+RETRIEVAL (step 3)
+  route                InterPro signature IPR016251 | IPR000980 + IPR001496
+  tier                 Metazoa (superset; paralogue assignment restricts)
+  entries retrieved    14338
+  sequences fetched    14338
+  accepted / rejected  5899 / 8437
+  species per paralogue {"JAK1": 617, "JAK2": 648, "TYK2": 366, "SOCS1": 704, "SOCS3": 704}
+  runtime              2748.9 s
+
+ALIGNMENT (step 4) - dimension checks
+  jak   records_in= 1635 retained= 1591 columns= 319 neff80=   43.6 mean_pairwise_id=0.6533
+  socs  records_in= 2011 retained= 2011 columns= 235 neff80=  107.5 mean_pairwise_id=0.5979
+
+COORDINATE MAPS (step 4) - all round-trip assertions PASSED
+  jak  references: JAK1, JAK2, JAK2_MOUSE_4GL9, TYK2
+  socs references: SOCS1, SOCS1_CHICK_6C7Y, SOCS2, SOCS3, SOCS3_MOUSE_4GL9
+
+COLUMN PROVENANCE (step 5) - all assertions PASSED
+  jak   columns= 319 anchored= 299 in_required_feature=0.9398 features=['JH1']
+  socs  columns= 235 anchored= 187 in_required_feature=0.8342 features=['ESS', 'KIR', 'SH2', 'SOCS_box']
+  cross-family contamination: 0 columns (checked explicitly)
+
+CONSTRAINT (step 6)
+  weighting            Henikoff position-based (Kish effective n 96-350)
+  bootstrap            1000 resamples per column
+family  scope  n_sequences  neff_dca80  mean_jsd  mean_conservation  kish_neff  kish_frac_of_N
+   jak   JAK1          607        12.6    0.6184             0.8219      191.5           0.315
+   jak   JAK2          625         8.8    0.6619             0.8488       96.3           0.154
+   jak   TYK2          355        22.2    0.5694             0.7828      127.8           0.360
+   jak FAMILY         1587        43.6    0.5344             0.7100      309.8           0.195
+  socs  SOCS1          704        43.0    0.4172             0.6874      195.8           0.278
+  socs  SOCS3          704        11.2    0.4051             0.8110       99.1           0.141
+  socs  SOCS2          598        53.2    0.3345             0.6166      135.3           0.226
+  socs FAMILY         2006       107.5    0.3209             0.5652      349.1           0.174
+
+DEPTH GATE (step 11)
+                         dataset  n_records  l_jak  l_socs  l_total  neff_theta_0.7  neff_theta_0.8  neff_theta_0.9  neff_over_l  ovchinnikov_threshold  gate_ratio  passes_gate
+factorial_pool_JH1_x_SOCSmodules       2912    281     156      437            18.5           145.3           523.8       0.3324                  218.5      0.6648        False
+
+SPECIES-SCRAMBLED NULL (step 11) - 200 replicates
+             statistic  observed  null_mean  null_sd     z  p_empirical  interpretable                                                                       note
+mean_inter_block_score  0.000000  -0.000000 0.000000 1.293     0.213930          False vacuous: APC subtraction forces the inter-block mean to ~0 by construction
+       mean_of_top_100  0.101674   0.090658 0.004522 2.436     0.014925           True                                                     primary tail statistic
+ max_inter_block_score  0.174808   0.135774 0.014518 2.689     0.029851           True                                                    extreme-value statistic
+
+INTERFACE TEST (step 9) - 10,000 within-stratum permutations
+structure side paralogue  cliffs_delta  delta_ci_low  delta_ci_high  permutation_p    q_bh
+     4GL9 SOCS     SOCS3       -0.0870       -0.3524         0.1820       0.385461 0.51395
+     4GL9  JAK      JAK2        0.0625       -0.1160         0.2295       0.615038 0.61504
+     6C7Y SOCS     SOCS1        0.2016       -0.0620         0.4405       0.036196 0.12119
+     6C7Y  JAK      JAK1        0.1382       -0.0439         0.3132       0.060594 0.12119
+
+META-ANALYSIS (step 12)
+                 model  pooled_delta  ci_low  ci_high     z        p
+ fixed_effect_all_four        0.0887 -0.0140   0.1915 1.692 0.090556
+fixed_effect_4GL9_only        0.0184 -0.1266   0.1635 0.249 0.803353
+fixed_effect_6C7Y_only        0.1595  0.0139   0.3050 2.148 0.031747

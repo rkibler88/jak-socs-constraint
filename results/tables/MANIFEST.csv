@@ -1,0 +1,50 @@
+published_path,internal_name,bytes,sha256_16,description
+data/alignments/jak_family.fasta,alignments/jak_family.fasta,536609,f47cda89d5191567,Per-family domain alignment
+data/alignments/socs_family.fasta,alignments/socs_family.fasta,507470,1a10ac21991b5508,Per-family domain alignment
+data/reference/alignment_column_provenance.csv,column_provenance.csv,37253,bab53bf9a3bcd0e2,"Per-column identity: canonical residue and feature for each reference, gap fraction"
+data/reference/coordinate_maps.json,coordinate_maps.json,47697,b6a661440e1a990a,Bijective canonical-residue <-> alignment-column maps for all 9 reference rows
+data/reference/human_reference_signatures.json,reference_signatures.json,2314,a03c2da6ea53463b,Pfam/InterPro signatures read off the six human reference proteins
+data/reference/literature_references.csv,references.csv,8823,e2f589083dae14ca,"32 cited sources with PMID, DOI and the role each plays in the design"
+data/reference/paralogue_assignment.csv,paralogue_assignment.csv,2059935,46dc8b363c7d427f,"Per-entry paralogue call with identity, coverage, bitscore margin and rejection reason"
+data/reference/uniprot_domain_projection.csv,feature_projection.csv,49512,7e08fd2edbdb2963,Every annotated residue projected to its alignment column
+data/reference/uniprot_domain_ranges.csv,feature_ranges.csv,1071,e1b3f55a6348b3a6,"UniProt domain boundaries per reference, with alignment coverage and column span"
+data/sequences/jak1.fasta,sequences/JAK1.FASTA,724839,05b57c748ccf99d1,Paralogue orthologue set
+data/sequences/jak2.fasta,sequences/JAK2.FASTA,743620,222129822d0a638e,Paralogue orthologue set
+data/sequences/socs1.fasta,sequences/SOCS1.FASTA,172560,073077cdfebace6b,Paralogue orthologue set
+data/sequences/socs3.fasta,sequences/SOCS3.FASTA,176842,27cfd5975dbaf6ad,Paralogue orthologue set
+data/sequences/tyk2.fasta,sequences/TYK2.FASTA,444141,03a08f75b68ebec5,Paralogue orthologue set
+results/logs/uniprot_queries.json,depth_scoping_queries.json,5039,5aec78a662d3f952,Exact UniProt query strings and result counts for every scoping query
+results/tables/01_depth_scoping_designs.csv,depth_scoping.csv,1316,ff6fbe56fb8adafc,"All 12 candidate designs with N, L, N_eff, depth-gate threshold and ratio"
+results/tables/01_paired_species_per_paralogue_pair.csv,per_pair_species.csv,186,afac5159f92b2a94,Paired-species counts for the six JAK x SOCS paralogue combinations
+results/tables/01_retrieval_yield_by_route_tier.csv,retrieval_yield.csv,413,28dd525862cff1e6,Entries and distinct species per retrieval route x taxonomic tier x family
+results/tables/02_retrieval_summary.json,retrieval_summary.json,2296,44a4ee2715a3cc84,"Retrieval totals, rejection reasons and decoy-diversion counts"
+results/tables/03_alignment_dimensions.json,alignment_meta.json,685,c620d29f0311f74b,"Alignment dimensions, extraction window and mean pairwise identity per family"
+results/tables/03_alignment_quality_per_paralogue.csv,alignment_quality.csv,206,76dc6460055dffbd,"Per-paralogue sequence counts, N_eff and mean column occupancy"
+results/tables/04_provenance_assertions.json,provenance_report.json,455,e9991e1b551bc6f9,Outcome of the column-provenance assertions for both families
+results/tables/05_constraint_effective_sample_sizes.csv,constraint_scope_summary.csv,447,d5373a5d7f583d02,"Sequence counts, DCA-convention N_eff and Kish effective n per paralogue"
+results/tables/05_module_constraint.csv,module_constraint_summary.csv,1412,078a036d01a15680,Module-level mean constraint with bootstrap 95% CIs per paralogue
+results/tables/05_module_constraint_gap_decomposition.csv,module_gap_decomposition.csv,784,e1842e457957608a,"Module constraint with and without the gap penalty, separating absence from divergence"
+results/tables/05_residue_constraint.csv,residue_constraint.csv,135934,5f50783aa597cdd0,"Per-residue entropy, conservation and JSD with bootstrap CIs, in UniProt numbering"
+results/tables/06_specificity_axis_overlap.csv,sdp_axis_overlap.csv,129,5fdacf745d40ac3f,Overlap of top specificity positions between contrasts vs hypergeometric expectation
+results/tables/06_specificity_by_feature.csv,sdp_feature_summary.csv,204,99391025ba4eed56,Specificity summary grouped by annotated feature
+results/tables/06_specificity_by_module.csv,sdp_module_summary.csv,282,31c220f88f769839,Module-level specificity with and without deletion-driven columns
+results/tables/06_specificity_gap_decomposition.csv,sdp_gap_decomposition.csv,187,6b56ed30f86e2132,Fraction of each module's specificity signal attributable to deletion
+results/tables/06_specificity_null_distributions.npz,sdp_nulls.npz,25147,0e5c92e3a2eed957,Permutation null summaries per specificity axis
+results/tables/06_specificity_per_column.csv,sdp_table.csv,171482,18ef492e46807cc8,"Per-column mutual information, permutation z/p/q, per-group gap fraction and consensus"
+results/tables/07_interface_residues.csv,interface_residues.csv,6491,363ca8d7e8f86269,"Interface residue sets per structure and side, deduplicated across crystal copies"
+results/tables/07_structural_contact_pairs.csv,structural_contacts.csv,68015,c89f5d67ab038bf7,"Inter-chain residue pairs within 8 A, in each structure's own canonical numbering"
+results/tables/07_structure_metadata.json,structures_meta.json,2776,28094d168c3704cf,"Chain pairing contact counts, resolved ranges and citations"
+results/tables/07_unbound_chain_sasa.csv,structural_sasa.csv,19186,6a4cb3c1517aa690,Per-residue solvent-accessible surface area of the isolated chains
+results/tables/08_interface_constraint_tests.csv,interface_constraint_tests.csv,927,d46b9e7d8140f432,"Primary test: interface vs matched-control constraint, effect sizes and p/q values"
+results/tables/08_interface_min_detectable_effect.csv,interface_min_detectable_effect.csv,95,d2eea39858c0ced2,"Smallest constraint shift detectable at 80% power, in control SD units"
+results/tables/08_interface_null_distributions.npz,interface_nulls.npz,275443,07d049007bb5081d,Within-stratum permutation nulls for the interface tests
+results/tables/08_interface_power_curve.csv,interface_power_analysis.csv,1072,a450a45818a92fe1,"Simulated power against constraint shift, per structure and side"
+results/tables/08_matched_control_residues.csv,matched_control_sets.csv,33971,4a48dd1f9baccdbe,Every residue entering the matched comparison with its covariate stratum
+results/tables/09_declared_motif_tests.csv,motif_tests.csv,12692,c92e5a6b3588d553,"The pre-declared motif family: constraint, specificity and aromaticity per motif"
+results/tables/09_multiple_testing_correction.csv,multiple_testing.csv,4943,3ee3862d7d1acfd8,Benjamini-Hochberg correction across the declared motif family
+results/tables/10_coupling_depth_gate.csv,depth_power_report.csv,234,1fd6d6d47d399ad1,Depth diagnostics for the best design against the published inter-protein threshold
+results/tables/10_coupling_null_distributions.npz,dca_null_distributions.npz,166940,419c4234b79df9b8,Observed score matrix and the species-scrambled replicate statistics
+results/tables/10_coupling_vs_scrambled_null.csv,dca_null_comparison.csv,411,8699f2d7cdce0dd9,Observed inter-block coupling statistics against the species-scrambled null
+results/tables/11_constraint_profile_concordance.csv,profile_concordance.csv,409,50a5f37222013b7a,Rank correlation of constraint profiles between paralogues within each family
+results/tables/11_interface_meta_analysis.csv,interface_meta_analysis.csv,330,27e719257a898424,"Inverse-variance meta-analysis of the interface effect, with heterogeneity"
+results/tables/11_kir_leave_one_binder_out.csv,leave_one_paralogue_out.csv,257,b98087483070b721,KIR specificity recomputed dropping each inhibitory paralogue in turn

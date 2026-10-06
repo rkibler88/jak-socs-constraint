@@ -1,0 +1,4 @@
+statistic,observed,null_mean,null_sd,z,p_empirical,interpretable,note
+mean_inter_block_score,0.0,-0.0,0.0,1.293,0.2139303482587064,False,vacuous: APC subtraction forces the inter-block mean to ~0 by construction
+mean_of_top_100,0.101674,0.090658,0.004522,2.436,0.0149253731343283,True,primary tail statistic
+max_inter_block_score,0.174808,0.135774,0.014518,2.689,0.0298507462686567,True,extreme-value statistic

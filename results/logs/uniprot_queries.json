@@ -1,0 +1,226 @@
+[
+ {
+  "route": "gene_name",
+  "tier": "Gnathostomata",
+  "family": "JAK_family",
+  "label": "JAK1",
+  "query": "(gene:jak1) AND (taxonomy_id:7776)",
+  "n_entries": 830
+ },
+ {
+  "route": "gene_name",
+  "tier": "Gnathostomata",
+  "family": "JAK_family",
+  "label": "JAK2",
+  "query": "(gene:jak2) AND (taxonomy_id:7776)",
+  "n_entries": 673
+ },
+ {
+  "route": "gene_name",
+  "tier": "Gnathostomata",
+  "family": "JAK_family",
+  "label": "TYK2",
+  "query": "(gene:tyk2) AND (taxonomy_id:7776)",
+  "n_entries": 766
+ },
+ {
+  "route": "gene_name",
+  "tier": "Gnathostomata",
+  "family": "SOCS_family",
+  "label": "SOCS1",
+  "query": "(gene:socs1) AND (taxonomy_id:7776)",
+  "n_entries": 731
+ },
+ {
+  "route": "gene_name",
+  "tier": "Gnathostomata",
+  "family": "SOCS_family",
+  "label": "SOCS3",
+  "query": "(gene:socs3) AND (taxonomy_id:7776)",
+  "n_entries": 501
+ },
+ {
+  "route": "interpro",
+  "tier": "Gnathostomata",
+  "family": "JAK_family",
+  "label": "IPR016251",
+  "query": "(xref:interpro-IPR016251) AND (taxonomy_id:7776)",
+  "n_entries": 5210
+ },
+ {
+  "route": "interpro",
+  "tier": "Gnathostomata",
+  "family": "SOCS_family",
+  "label": "IPR000980+IPR001496",
+  "query": "(xref:interpro-IPR000980) AND (xref:interpro-IPR001496) AND (taxonomy_id:7776)",
+  "n_entries": 7357
+ },
+ {
+  "route": "gene_name",
+  "tier": "Vertebrata",
+  "family": "JAK_family",
+  "label": "JAK1",
+  "query": "(gene:jak1) AND (taxonomy_id:7742)",
+  "n_entries": 830
+ },
+ {
+  "route": "gene_name",
+  "tier": "Vertebrata",
+  "family": "JAK_family",
+  "label": "JAK2",
+  "query": "(gene:jak2) AND (taxonomy_id:7742)",
+  "n_entries": 673
+ },
+ {
+  "route": "gene_name",
+  "tier": "Vertebrata",
+  "family": "JAK_family",
+  "label": "TYK2",
+  "query": "(gene:tyk2) AND (taxonomy_id:7742)",
+  "n_entries": 766
+ },
+ {
+  "route": "gene_name",
+  "tier": "Vertebrata",
+  "family": "SOCS_family",
+  "label": "SOCS1",
+  "query": "(gene:socs1) AND (taxonomy_id:7742)",
+  "n_entries": 731
+ },
+ {
+  "route": "gene_name",
+  "tier": "Vertebrata",
+  "family": "SOCS_family",
+  "label": "SOCS3",
+  "query": "(gene:socs3) AND (taxonomy_id:7742)",
+  "n_entries": 501
+ },
+ {
+  "route": "interpro",
+  "tier": "Vertebrata",
+  "family": "JAK_family",
+  "label": "IPR016251",
+  "query": "(xref:interpro-IPR016251) AND (taxonomy_id:7742)",
+  "n_entries": 5212
+ },
+ {
+  "route": "interpro",
+  "tier": "Vertebrata",
+  "family": "SOCS_family",
+  "label": "IPR000980+IPR001496",
+  "query": "(xref:interpro-IPR000980) AND (xref:interpro-IPR001496) AND (taxonomy_id:7742)",
+  "n_entries": 7370
+ },
+ {
+  "route": "gene_name",
+  "tier": "Chordata",
+  "family": "JAK_family",
+  "label": "JAK1",
+  "query": "(gene:jak1) AND (taxonomy_id:7711)",
+  "n_entries": 830
+ },
+ {
+  "route": "gene_name",
+  "tier": "Chordata",
+  "family": "JAK_family",
+  "label": "JAK2",
+  "query": "(gene:jak2) AND (taxonomy_id:7711)",
+  "n_entries": 674
+ },
+ {
+  "route": "gene_name",
+  "tier": "Chordata",
+  "family": "JAK_family",
+  "label": "TYK2",
+  "query": "(gene:tyk2) AND (taxonomy_id:7711)",
+  "n_entries": 766
+ },
+ {
+  "route": "gene_name",
+  "tier": "Chordata",
+  "family": "SOCS_family",
+  "label": "SOCS1",
+  "query": "(gene:socs1) AND (taxonomy_id:7711)",
+  "n_entries": 732
+ },
+ {
+  "route": "gene_name",
+  "tier": "Chordata",
+  "family": "SOCS_family",
+  "label": "SOCS3",
+  "query": "(gene:socs3) AND (taxonomy_id:7711)",
+  "n_entries": 502
+ },
+ {
+  "route": "interpro",
+  "tier": "Chordata",
+  "family": "JAK_family",
+  "label": "IPR016251",
+  "query": "(xref:interpro-IPR016251) AND (taxonomy_id:7711)",
+  "n_entries": 5222
+ },
+ {
+  "route": "interpro",
+  "tier": "Chordata",
+  "family": "SOCS_family",
+  "label": "IPR000980+IPR001496",
+  "query": "(xref:interpro-IPR000980) AND (xref:interpro-IPR001496) AND (taxonomy_id:7711)",
+  "n_entries": 7416
+ },
+ {
+  "route": "gene_name",
+  "tier": "Metazoa",
+  "family": "JAK_family",
+  "label": "JAK1",
+  "query": "(gene:jak1) AND (taxonomy_id:33208)",
+  "n_entries": 830
+ },
+ {
+  "route": "gene_name",
+  "tier": "Metazoa",
+  "family": "JAK_family",
+  "label": "JAK2",
+  "query": "(gene:jak2) AND (taxonomy_id:33208)",
+  "n_entries": 687
+ },
+ {
+  "route": "gene_name",
+  "tier": "Metazoa",
+  "family": "JAK_family",
+  "label": "TYK2",
+  "query": "(gene:tyk2) AND (taxonomy_id:33208)",
+  "n_entries": 766
+ },
+ {
+  "route": "gene_name",
+  "tier": "Metazoa",
+  "family": "SOCS_family",
+  "label": "SOCS1",
+  "query": "(gene:socs1) AND (taxonomy_id:33208)",
+  "n_entries": 732
+ },
+ {
+  "route": "gene_name",
+  "tier": "Metazoa",
+  "family": "SOCS_family",
+  "label": "SOCS3",
+  "query": "(gene:socs3) AND (taxonomy_id:33208)",
+  "n_entries": 502
+ },
+ {
+  "route": "interpro",
+  "tier": "Metazoa",
+  "family": "JAK_family",
+  "label": "IPR016251",
+  "query": "(xref:interpro-IPR016251) AND (taxonomy_id:33208)",
+  "n_entries": 5305
+ },
+ {
+  "route": "interpro",
+  "tier": "Metazoa",
+  "family": "SOCS_family",
+  "label": "IPR000980+IPR001496",
+  "query": "(xref:interpro-IPR000980) AND (xref:interpro-IPR001496) AND (taxonomy_id:33208)",
+  "n_entries": 9033
+ }
+]

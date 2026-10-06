@@ -1,0 +1,34 @@
+[
+  {
+    "family": "jak",
+    "window_reference": "JAK2",
+    "window_canonical": [
+      834,
+      1132
+    ],
+    "pass1_columns": 299,
+    "records_in": 1635,
+    "records_retained": 1591,
+    "pass2_columns": 319,
+    "n_sequences": 1591,
+    "neff_80": 43.6,
+    "mean_pairwise_identity": 0.6533,
+    "median_gap_fraction": 0.0069
+  },
+  {
+    "family": "socs",
+    "window_reference": "SOCS1",
+    "window_canonical": [
+      25,
+      211
+    ],
+    "pass1_columns": 187,
+    "records_in": 2011,
+    "records_retained": 2011,
+    "pass2_columns": 235,
+    "n_sequences": 2011,
+    "neff_80": 107.5,
+    "mean_pairwise_identity": 0.5979,
+    "median_gap_fraction": 0.0298
+  }
+]

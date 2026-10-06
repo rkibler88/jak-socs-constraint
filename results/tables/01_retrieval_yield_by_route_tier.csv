@@ -1,0 +1,9 @@
+route,tier,jak_species,socs_species,paired_species,jak_entries,socs_entries
+gene_name,Gnathostomata,492,472,449,2269,1232
+gene_name,Vertebrata,492,472,449,2269,1232
+gene_name,Chordata,493,474,450,2270,1234
+gene_name,Metazoa,502,474,450,2283,1234
+interpro,Gnathostomata,747,776,744,5210,7357
+interpro,Vertebrata,749,778,746,5212,7370
+interpro,Chordata,755,785,752,5222,7416
+interpro,Metazoa,830,1302,825,5305,9033

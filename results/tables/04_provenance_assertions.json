@@ -1,0 +1,23 @@
+{
+  "jak": {
+    "columns": 319,
+    "columns_with_anchor_residue": 299,
+    "columns_in_required_feature": 281,
+    "fraction_in_required_feature": 0.9398,
+    "features_present": [
+      "JH1"
+    ]
+  },
+  "socs": {
+    "columns": 235,
+    "columns_with_anchor_residue": 187,
+    "columns_in_required_feature": 156,
+    "fraction_in_required_feature": 0.8342,
+    "features_present": [
+      "ESS",
+      "KIR",
+      "SH2",
+      "SOCS_box"
+    ]
+  }
+}

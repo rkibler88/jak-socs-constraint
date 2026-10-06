@@ -1,0 +1,5 @@
+module,n_columns,n_substitution_driven,mean_mi_with_gaps,mean_mi_residues_only,mean_mi_subst_cols_only,mean_gapfrac_nonbinder
+KIR,12,5,0.5568,0.3936,0.4058,0.3811
+ESS,12,12,0.3111,0.2979,0.3111,0.0605
+SH2,83,76,0.2919,0.2692,0.2587,0.0558
+SOCS_box,50,41,0.2959,0.2858,0.2619,0.0784

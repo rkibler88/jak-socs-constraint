@@ -1,0 +1,5 @@
+structure,side,min_detectable_shift_sd
+4GL9,JAK,0.5
+4GL9,SOCS,0.75
+6C7Y,JAK,0.5
+6C7Y,SOCS,0.75

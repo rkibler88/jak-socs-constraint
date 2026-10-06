@@ -1,0 +1,9 @@
+2026-09-30 13:12:56,474 INFO 4GL9 SOCS SOCS3  iface n= 31  ctrl n= 53  strata=10  delta=-0.087 [-0.352,+0.182]  p_perm=0.3966
+2026-09-30 13:12:56,787 INFO 4GL9 JAK  JAK2   iface n= 42  ctrl n=209  strata= 8  delta=+0.063 [-0.116,+0.229]  p_perm=0.5934
+2026-09-30 13:12:57,098 INFO 6C7Y SOCS SOCS1  iface n= 31  ctrl n= 64  strata=12  delta=+0.202 [-0.062,+0.441]  p_perm=0.0370
+2026-09-30 13:12:57,407 INFO 6C7Y JAK  JAK1   iface n= 51  ctrl n=195  strata= 8  delta=+0.138 [-0.044,+0.313]  p_perm=0.0649
+structure side paralogue  n_interface_matched  n_control_matched  mean_jsd_interface  mean_jsd_control  cliffs_delta  delta_ci_low  delta_ci_high  permutation_p    q_bh  significant_q05
+     4GL9 SOCS     SOCS3                   31                 53              0.6477            0.6760       -0.0870       -0.3524         0.1820       0.396603 0.52880            False
+     4GL9  JAK      JAK2                   42                209              0.7299            0.6970        0.0625       -0.1160         0.2295       0.593407 0.59341            False
+     6C7Y SOCS     SOCS1                   31                 64              0.6452            0.5780        0.2016       -0.0620         0.4405       0.036963 0.12987            False
+     6C7Y  JAK      JAK1                   51                195              0.7055            0.6677        0.1382       -0.0439         0.3132       0.064935 0.12987            False
