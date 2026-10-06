@@ -49,6 +49,36 @@ def background_frequencies(alphabet: str) -> np.ndarray:
     return q / q.sum()
 
 
+def kish_effective_size(weights: np.ndarray) -> float:
+    """Kish (1965) effective sample size of a weighted sample.
+
+    Henikoff weights are normalised so that they sum to the number of
+    sequences, which makes their sum uninformative -- it simply restates N. The
+    quantity that describes how much independent information a weighted
+    alignment carries is Kish's
+
+        n_eff = (sum w)^2 / sum w^2
+
+    which equals N when all weights are equal and falls as weight concentrates
+    on a few sequences. This is the figure to quote for a conservation
+    analysis, and it is not comparable to the identity-threshold N_eff used as
+    the depth gate for coupling inference.
+
+    Args:
+        weights: Non-negative sequence weights.
+
+    Returns:
+        Effective sample size, between 1 and ``len(weights)``.
+
+    Raises:
+        ValueError: If the weights are empty or sum to zero.
+    """
+    w = np.asarray(weights, dtype=np.float64)
+    if w.size == 0 or not np.isfinite(w).all() or w.sum() <= 0:
+        raise ValueError("weights must be non-empty, finite and sum to > 0")
+    return float(w.sum() ** 2 / np.square(w).sum())
+
+
 def henikoff_weights(msa: np.ndarray, include_gaps: bool = False) -> np.ndarray:
     """Henikoff & Henikoff (1994) position-based sequence weights.
 

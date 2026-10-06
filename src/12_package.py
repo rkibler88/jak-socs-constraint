@@ -60,6 +60,13 @@ FILEMAP: dict[str, tuple[str, str, str]] = {
         "Per-residue entropy, conservation and JSD with bootstrap CIs, in UniProt numbering"),
     "module_constraint_summary.csv": ("results/tables", "05_module_constraint.csv",
         "Module-level mean constraint with bootstrap 95% CIs per paralogue"),
+    "module_deficit_test.csv": ("results/tables", "05_module_deficit_test.csv",
+        "Permutation test that the SOCS1/SOCS3-minus-SOCS2 constraint deficit is "
+        "module-specific, in three variants: gap-penalised, residues-only, and "
+        "restricted to columns SOCS2 occupies at >50%"),
+    "mutant_panel_scores.csv": ("results/tables", "13_mutant_panel_scores.csv",
+        "Declared SOCS1 variant panel scored for constraint, specificity rank, "
+        "per-paralogue consensus and orthologue frequency of the introduced residue"),
     "module_gap_decomposition.csv": ("results/tables",
         "05_module_constraint_gap_decomposition.csv",
         "Module constraint with and without the gap penalty, separating absence from divergence"),

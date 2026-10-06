@@ -19,6 +19,9 @@ result; see §"Depth" below.
 | KIR constraint, SOCS1 / SOCS3 / SOCS2 | 0.524 / 0.572 / **0.181** (non-overlapping CIs) | `05_module_constraint.csv` |
 | ESS constraint, SOCS1 / SOCS3 / SOCS2 | 0.532 / 0.599 / **0.334** | `05_module_constraint.csv` |
 | SH2 and SOCS box | comparable across all three paralogues | `05_module_constraint.csv` |
+| Constraint deficit is module-specific | KIR z = 6.59, q = 4×10⁻⁴; ESS z = 3.41, q = 0.003; SH2 and SOCS box ns | `05_module_deficit_test.csv` |
+| Deficit survives removing the KIR deletion | residues-only q = 4×10⁻⁴; SOCS2-occupied columns only q = 0.0016 | `05_module_deficit_test.csv` |
+| Declared variant panel, consensus reversions | V128I / R201K / R141K restore residues at 72.3% / 69.3% / 62.4% orthologue frequency; other nine introduce 0.0–8.8% | `13_mutant_panel_scores.csv` |
 | KIR specificity enrichment (binder vs SOCS2) | 2.44-fold, z = 5.29, q = 0.0021 | `09_declared_motif_tests.csv` |
 | Aromaticity at SOCS1 Tyr64 / SOCS3 Tyr31 | 0.885 / 0.967 vs **0.010** in SOCS2 | `09_declared_motif_tests.csv` |
 | Aromaticity at BC loop SOCS1 112–113 / SOCS3 79–80 | 0.995 / 0.939 vs **0.211** in SOCS2 | `09_declared_motif_tests.csv` |
@@ -44,6 +47,7 @@ jak-socs-constraint/
 │   ├── lib_sequence.py          retrieval, alignment, coordinate maps, effective depth
 │   ├── lib_constraint.py        conservation, specificity MI, Henikoff weights, BH
 │   ├── 01_depth_scoping.py  …  11_consistency.py   analysis stages, in order
+│   ├── 13_mutant_panel.py                          declared variant panel scoring
 │   └── 12_package.py            name mapping between working and published trees
 ├── data/
 │   ├── sequences/               one FASTA per paralogue, one sequence per species

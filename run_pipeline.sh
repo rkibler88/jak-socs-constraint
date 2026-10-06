@@ -132,6 +132,9 @@ run_stage 10 "coupling depth gate and species-scrambled null" \
 run_stage 11 "cross-paralogue consistency and meta-analysis" \
   $PY "$SRC/11_consistency.py" --outdir "$OUTDIR"
 
+run_stage 13 "evolutionary scoring of the declared variant panel" \
+  $PY "$SRC/13_mutant_panel.py" --outdir "$OUTDIR"
+
 run_stage 12 "package outputs into the published tree" \
   $PY "$SRC/12_package.py" --pack --workdir "$WORKDIR" --root .
 

@@ -24,6 +24,7 @@ results/tables/04_provenance_assertions.json,provenance_report.json,455,e9991e1b
 results/tables/05_constraint_effective_sample_sizes.csv,constraint_scope_summary.csv,447,d5373a5d7f583d02,"Sequence counts, DCA-convention N_eff and Kish effective n per paralogue"
 results/tables/05_module_constraint.csv,module_constraint_summary.csv,1412,078a036d01a15680,Module-level mean constraint with bootstrap 95% CIs per paralogue
 results/tables/05_module_constraint_gap_decomposition.csv,module_gap_decomposition.csv,784,e1842e457957608a,"Module constraint with and without the gap penalty, separating absence from divergence"
+results/tables/05_module_deficit_test.csv,module_deficit_test.csv,1103,a520fe3c627562aa,"Permutation test that the SOCS1/SOCS3-minus-SOCS2 constraint deficit is module-specific, in three variants: gap-penalised, residues-only, and restricted to columns SOCS2 occupies at >50%"
 results/tables/05_residue_constraint.csv,residue_constraint.csv,135934,5f50783aa597cdd0,"Per-residue entropy, conservation and JSD with bootstrap CIs, in UniProt numbering"
 results/tables/06_specificity_axis_overlap.csv,sdp_axis_overlap.csv,129,5fdacf745d40ac3f,Overlap of top specificity positions between contrasts vs hypergeometric expectation
 results/tables/06_specificity_by_feature.csv,sdp_feature_summary.csv,204,99391025ba4eed56,Specificity summary grouped by annotated feature
@@ -48,3 +49,4 @@ results/tables/10_coupling_vs_scrambled_null.csv,dca_null_comparison.csv,411,869
 results/tables/11_constraint_profile_concordance.csv,profile_concordance.csv,409,50a5f37222013b7a,Rank correlation of constraint profiles between paralogues within each family
 results/tables/11_interface_meta_analysis.csv,interface_meta_analysis.csv,330,27e719257a898424,"Inverse-variance meta-analysis of the interface effect, with heterogeneity"
 results/tables/11_kir_leave_one_binder_out.csv,leave_one_paralogue_out.csv,257,b98087483070b721,KIR specificity recomputed dropping each inhibitory paralogue in turn
+results/tables/13_mutant_panel_scores.csv,mutant_panel_scores.csv,1688,932d91273799d2a4,"Declared SOCS1 variant panel scored for constraint, specificity rank, per-paralogue consensus and orthologue frequency of the introduced residue"
