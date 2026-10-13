@@ -4,7 +4,7 @@ Accompanies the co-evolution paragraphs of the Results. A one-sentence pointer
 in the main-text Methods is sufficient, e.g.:
 
 > *Evolutionary constraint and specificity analyses, including sequence
-> retrieval, paralogue assignment, alignment, coordinate mapping, statistical
+> retrieval, paralog assignment, alignment, coordinate mapping, statistical
 > testing and power analysis, are described in full in Supplementary Methods
 > §S1–S8. Code and data: [repository URL].*
 
@@ -25,15 +25,15 @@ entries spanning two retrieval routes and four nested taxonomic tiers
 (Gnathostomata 7776, Vertebrata 7742, Chordata 7711, Metazoa 33208). It
 recovers 744 species carrying both families against 449 for gene-symbol
 queries, and 87% of the JAK-family entries in the 260 additional species carry
-no primary gene symbol — i.e. the gain comes from genomes that are sequenced
-but not yet annotated. Canonical sequences for the resulting 14,338 unique
+no primary gene symbol. The gain therefore comes from genomes that are
+sequenced but not yet annotated. Canonical sequences for the resulting 14,338 unique
 entries were fetched in batches of 100 from the `/uniprotkb/accessions`
 endpoint. Exact query strings and per-query counts are in the deposited
 `uniprot_queries.json`.
 
-## S2. Paralogue assignment
+## S2. Paralog assignment
 
-Paralogue identity was assigned by sequence, not by annotation, because gene
+Paralog identity was assigned by sequence, not by annotation, because gene
 symbols are absent or unreliable for most non-model entries. Each sequence was
 searched with MMseqs2 v18.8cc5c using
 
@@ -50,15 +50,15 @@ and excluded on evidence rather than silently absorbed (JAK3 P52333, SOCS2
 O14508, SOCS4 Q8WXH5, SOCS5 O75159, SOCS6 O14544, SOCS7 O14512, CIS Q9NSE2).
 
 A sequence was accepted only when its highest-bitscore hit was a target
-paralogue, with reference coverage ≥ 0.55, sequence identity ≥ 0.35 and a
-bitscore margin ≥ 1.10 over the best hit from any different paralogue. Of
+paralog, with reference coverage ≥ 0.55, sequence identity ≥ 0.35 and a
+bitscore margin ≥ 1.10 over the best hit from any different paralog. Of
 14,338 entries, 5,899 were accepted and 8,437 rejected, the rejections
 dominated by decoy assignment (SOCS7 1,612; SOCS5 1,475; SOCS6 1,139; CIS
 1,078; SOCS2 1,000; SOCS4 831; JAK3 501). JAK3 is therefore excluded by
 sequence, not only by query construction. One sequence was retained per
-(paralogue, species), ranked by reference coverage and then length — not by
+(paralog, species), ranked by reference coverage and then length, not by
 length alone, which preferentially selects long fragments over complete
-orthologues — yielding 617 JAK1, 648 JAK2, 366 TYK2, 704 SOCS1 and 704 SOCS3
+orthologs, yielding 617 JAK1, 648 JAK2, 366 TYK2, 704 SOCS1 and 704 SOCS3
 species. SOCS2 (598 species) was reconstructed from the same table under
 identical thresholds for use as the non-inhibitory contrast. Per-entry
 identity, coverage, margin, runner-up reference and rejection reason are
@@ -82,8 +82,8 @@ of 2,011 sequences × 235 columns (0.598, 0.030). Records occupying less than
 Bijective maps between canonical UniProt numbering and final alignment column
 were built for nine reference rows by composing the second-pass map with the
 canonical position of each extracted residue, recorded during extraction.
-Recovering the offset by substring search is invalid here: a paralogue's
-residues within a window defined on a different paralogue are non-contiguous
+Recovering the offset by substring search is invalid here: a paralog's
+residues within a window defined on a different paralog are non-contiguous
 wherever it carries an insertion. Every map was validated by asserting that
 each alignment column holds the residue the canonical sequence carries at that
 position; all nine passed. Maps cover JAK1, JAK2, TYK2, SOCS1, SOCS2, SOCS3
@@ -107,19 +107,19 @@ SOCS-box span; and no column carries an annotation from the opposing family.
 Per-column constraint was quantified as the Jensen–Shannon divergence of the
 weighted residue distribution against the Robinson & Robinson background
 amino-acid frequencies, scaled by the non-gap fraction, with Shannon entropy
-and normalised conservation reported alongside.
+and normalized conservation reported alongside.
 
 Sequences were weighted by Henikoff & Henikoff position-based weights rather
 than by the identity-threshold scheme conventional in coevolution analysis. The
-latter is inappropriate here: at an 80% identity threshold a set of orthologues
-of a single paralogue collapses almost completely (JAK2: effective depth 8.8
+latter is inappropriate here: at an 80% identity threshold a set of orthologs
+of a single paralog collapses almost completely (JAK2: effective depth 8.8
 from 625 sequences), discarding nearly all the data. Position-based weighting
 gives Kish effective sample sizes of 96.3 (JAK2), 99.1 (SOCS3), 127.8 (TYK2),
 135.3 (SOCS2), 191.5 (JAK1) and 195.8 (SOCS1). Per-column 95% confidence
 intervals came from 1,000 sequence bootstrap resamples; module-level intervals
 from 2,000 column resamples.
 
-Because the divergence score is gap-penalised, every module result was also
+Because the divergence score is gap-penalized, every module result was also
 computed without the gap penalty, so that absence of a region is distinguishable
 from divergence within it. This matters in both directions: SOCS2's KIR deficit
 is partly deletion (34% gaps, 4 of 12 columns more than half gapped) and partly
@@ -217,7 +217,7 @@ bootstrap half-width and heterogeneity assessed by Cochran's Q and I²
 observed sample sizes: control values were resampled with replacement, shifted
 by 0.1–1.0 control standard deviations and re-tested 600 times per shift,
 placing the smallest shift detectable at 80% power at 0.50 control SD for the
-JAK-side tests and 0.75 for the SOCS side — larger than any observed shift, so
+JAK-side tests and 0.75 for the SOCS side, larger than any observed shift, so
 large interface-specific effects are excluded while small-to-moderate ones
 remain possible. Constraint is additionally near saturation on the kinase side,
 with 70–80% of JAK control residues exceeding a divergence of 0.6.
@@ -225,12 +225,12 @@ with 70–80% of JAK control residues exceeding a divergence of 0.6.
 **Depth.** Depth available for inter-protein coupling inference was assessed
 against N_eff > (L₁+L₂)/2, with N_eff the sum of inverse neighbour counts at
 80% sequence identity across all columns, gaps included as a symbol. Twelve
-candidate designs were evaluated — both retrieval routes, four taxonomic tiers,
-the six paralogue-homogeneous JAK × SOCS species pairings, a fully factorial
-pool of all six, an invertebrate-inclusive pool and two column-set reductions —
-and all fail, at ratios 0.037–0.586 on the scoping alignments; the design
-carried forward to the coupling analysis reaches 0.665 on the final alignments
-and also fails. N_eff at 70% and 90% thresholds is
+candidate designs were evaluated: both retrieval routes, four taxonomic tiers,
+the six paralog-homogeneous JAK × SOCS species pairings, a fully factorial pool
+of all six, an invertebrate-inclusive pool, and two column-set reductions. All
+twelve fail, at ratios 0.037–0.586 on the scoping alignments. The design carried
+forward to the coupling analysis reaches 0.665 on the final alignments and also
+fails. N_eff at 70% and 90% thresholds is
 reported for sensitivity only; all decisions used the 80% value. The limiting
 factor is conservation rather than sampling: median pairwise identity in a
 JAK2 × SOCS3 alignment of 365 species is 0.904 and 73.5% of sequence pairs
@@ -240,14 +240,14 @@ Inter-block coupling was computed on the best-scoring design (factorial pool;
 2,912 records; JH1 281 columns × SOCS modules 156 columns; N_eff = 145.3
 against a requirement of 218.5) as mutual information with the average product
 correction applied to the inter-block submatrix alone. Mutual information
-rather than pseudolikelihood maximisation was used because at this depth
+rather than pseudolikelihood maximization was used because at this depth
 against 43,836 column pairs a pseudolikelihood fit is determined by its
-regularisation prior. Applying the correction to the pooled two-block matrix
+regularization prior. Applying the correction to the pooled two-block matrix
 would subtract a background that is partly the block structure itself; because
 the correction also forces the inter-block mean to approximately zero, the mean
 statistic is reported but flagged uninterpretable and inference rests on the
 tail. The null was 200 species-scrambled replicates in which the JAK–SOCS
-species correspondence was randomised while both marginal alignments, all
+species correspondence was randomized while both marginal alignments, all
 conservation and gap structure, and each family's phylogeny were preserved.
 
 ## S8. Software and reproducibility
@@ -267,7 +267,7 @@ table and figure.
 
 Nothing above needs to appear in the main text beyond the pointer sentence. If
 a reviewer asks for more in-text detail, the three items most worth promoting
-are: (i) that paralogue assignment is by sequence against a decoy-containing
+are: (i) that paralog assignment is by sequence against a decoy-containing
 panel, since this is what excludes JAK3 and SOCS2–7; (ii) that SOCS2 serves as
 the internal non-inhibitory contrast; and (iii) that the depth gate is a
 pre-specified published criterion rather than a post-hoc judgement.
